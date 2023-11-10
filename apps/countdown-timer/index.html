@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Name</title>
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <dialog class="modal p-1" data-modal>
+            <form action="" data-form>
+                <div>
+                    <label for="main-text">Main Text: </label>
+                    <input data-form-input type="text" id="main-text">
+                </div>
+                <div>
+                    <label for="add-time">calculate Dates till: </label>
+                    <input data-form-date type="date" name="" id="">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+            <button autofocus data-close-modal>Close</button>
+        </dialog>
+        <button data-open-modal class="btn text-lg pointer absolute"><i class="fa-solid fa-gear"></i></button>
+    </nav>
+    <main>
+        <h1 data-main-text class="text-center pt-10">Until New Beginnings</h1>
+        <div class="flex justify-center align-center flex-wrap gap-4 text-center">
+            <div>
+                <h3 data-time="days" class="text-xxl">00</h3>
+                <p class="mt-neg-1">days</p>
+            </div>
+            <div>
+                <h3 data-time="hours" class="text-xxl">00</h3>
+                <p class="mt-neg-1">hours</p>
+            </div>
+            <div>
+                <h3 data-time="minutes" class="text-xxl">00</h3>
+                <p class="mt-neg-1">minutes</p>
+            </div>
+            <div>
+                <h3 data-time="seconds" class="text-xxl">00</h3>
+                <p class="mt-neg-1" data-time="seconds">seonds</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
